@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cebea60af2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <div class="container">
+        <img src="exchange.png" alt="" class="app-icon">
+        <h3 class="app-title">Currency Convertor</h3>
+        
+        <div class="amount">
+            <h3>Enter Amount</h3>
+            <input type="number" class = "user-amount" value="1">
+        </div>
+        <div class="from-to">
+            <!-- from box start -->
+            <div class="from-box">
+<h3>From</h3>
+<div class="from-input">
+    <div class="from-flag">
+        <img src="https://flagsapi.com/US/flat/64.png" alt="" class="from-flag-img">
+    </div>
+    <input type="text" value="USD" readonly>
+    <i class="fa-solid fa-chevron-down"></i>
+
+</div>
+       <div class="from-country-options"></div>
+            </div>
+            <!-- from box end -->
+             <div class="switch-btn">
+                <i class="fa-solid fa-right-left"></i>
+             </div>
+              <!-- To box start -->
+            <div class="to-box">
+                <h3>To</h3>
+                <div class="to-input">
+                    <div class="to-flag">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="" class="to-flag-img">
+                    </div>
+                    <input type="text" value="INR" readonly>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="to-country-options"></div>
+                            </div>
+                            <!-- to box end -->
+                             
+        </div>
+                <button class="convert-btn">
+                    Get Exchange Rate
+                </button>
+                <div class="result-box">
+                    <h3 class = "result">100 USD = 861.11 INR</h3>
+                </div>
+       </div>
+       <script src = "Apikey.js"></script>
+       <script src = "country-list.js"></script>
+       
+    <script src="script.js"></script>
+   
+</body>
+</html> 
